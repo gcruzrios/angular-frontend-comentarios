@@ -1,1 +1,11 @@
-<p>ver-comentario works!</p>
+
+<div *ngIf="comentario !== undefined ">
+    <h3>{{comentario.titulo}}</h3>
+    <h5>{{comentario.texto }}</h5>
+    <ul>
+        <li>Autor: {{comentario.creador}}</li>
+        <li>Fecha Creación: {{comentario.fechaCreacion | date:'dd/MM/yyyy'  }}</li>
+    </ul>
+</div>
+
+<!--  -->
